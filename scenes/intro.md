@@ -19,15 +19,15 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act2"}}
-[_CONTINUE_: Вечеринка](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_ПРОДОЛЖИТЬ_: Вечеринка](#act2) `publish("LOAD_GAME", ["act2"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act3"}}
-[_CONTINUE_: Другая вечеринка](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_ПРОДОЛЖИТЬ_: Другая вечеринка](#act3) `publish("LOAD_GAME", ["act3"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="act4"}}
-[_CONTINUE_: Другой сэндвич](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
+[_ПРОДОЛЖИТЬ_: Другой сэндвич](#act4) `publish("LOAD_GAME", ["act4"]); Game.OVERRIDE_CHOICE_LINE=true;`
 {{/if}}
 
 {{if _.PLAYED_BEFORE && window.localStorage.continueChapter=="replay"}}
