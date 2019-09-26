@@ -14,7 +14,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n3: (game auto-saved)
+n3: (игра сохранена)
 
 ```
 Game.clearText();
@@ -208,42 +208,42 @@ hong({body:"sigh_2"});
 bb({eyes:"look_down"});
 ```
 
-h: *sigh*
+h: *вздох*
 
 ```
 hong({body:"hold", eyes:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: So what the ^hell^ was the moral of this story?
+h: Какова, чёрт возьми, мораль этой истории?
 
 `hong({body:"one_up", eyes:"annoyed"})`
 
-h: What did we even *learn*? I *was* being stupid, my "friends" *were* using me, and we almost frickin' *died*.
+h: Что мы вообще *узнали*? Я был *глуп*, мои "друзья" *использовали* меня, и мы чуть не *погибли*.
 
 `hong({body:"normal", eyes:"normal"})`
 
 {{if _.INJURED}}
-[Yeah, not to mention the hospital bill.](#act4a_bill)
+[Да, не говоря уже о больничном счёте.](#act4a_bill)
 {{/if}}
 
 {{if !_.INJURED}}
-[Yeah, not to mention the liver damage.](#act4a_liver)
+[Да, не говоря уже об уроне печени.](#act4a_liver)
 {{/if}}
 
-[Yeah, that *was* the worst-case scenario.](#act4a_worst)
+[Да, это *был* худший сценарий.](#act4a_worst)
 
-[Yeah, I was right.](#act4a_right)
+[Да, я был прав.](#act4a_right)
 
 # act4a_bill
 
 `hong({eyes:"annoyed_l", mouth:"narrow"});`
 
-h: Right. I don't think my insurance plan covers "being a dumb^ass^".
+h: Верно. Я не думаю, что моя страховка покрывает "быть тупым идиотом".
 
 `hong({eyes:"annoyed", mouth:"normal"});`
 
-b: And yet... we survived!
+b: И, всё же... мы выжили!
 
 `hong({eyes:"normal"});`
 
@@ -255,11 +255,11 @@ h: ?
 
 `bb({eyes:"normal_d"});`
 
-b: We definitely shaved a few years off our life expectancy...
+b: Мы определенно сбросили несколько лет от ожидаемой продолжительности жизни...
 
 `bb({eyes:"surprise"});`
 
-b: But at least we still *have* a life expectancy! We survived!
+b: Но, по крайней мере, у нас *всё ещё* есть ожидаемая продолжительность жизни! Мы выжили!
 
 ```
 hong({eyes:"surprise"});
@@ -274,13 +274,13 @@ h: ?
 
 `bb({eyes:"normal_d"});`
 
-b: And yet...
+b: И, всё же...
 
-h: Hm?
+h: Хм?
 
 `bb({eyes:"surprise"});`
 
-b: We survived!
+b: Мы выжили!
 
 (#act4b)
 
@@ -288,19 +288,19 @@ b: We survived!
 
 `bb({eyes:"normal_d"});`
 
-b: But... you were right, too.
+b: Но... ты тоже прав.
 
 `hong({eyes:"surprise"});`
 
-h: Hm?
+h: Хм?
 
 `bb({eyes:"normal"});`
 
-b: I *was* the wolf who cried wolf. So when *actual* danger came, you – justifiably – didn't believe me.
+b: Я *был* волком что кричал "волки". Поэтому, когда появилась *реальная* опасность, ты - по праву - не поверил мне.
 
 `bb({eyes:"surprise_r"});`
 
-b: And yet, we survived!
+b: И, всё же, мы выжили!
 
 (#act4b)
 
@@ -311,16 +311,16 @@ bb({eyes:"normal", mouth:"normal"});
 hong({eyes:"normal", mouth:"normal"});
 ```
 
-b: Despite everything, we're still here.
+b: Несмотря ни на что, мы всё ещё здесь.
 
 `hong({eyes:"suspect"});`
 
 {{if _.INJURED}}
-h: You seem pretty calm considering we just had a near-death experience.
+h: Ты кажешься довольно спокойным, учитывая, что у нас только что был опыт смерти.
 {{/if}}
 
 {{if !_.INJURED}}
-h: You seem pretty calm considering we just had a *near*-near-death experience.
+h: Ты выглядишь довольно спокойным, учитывая, что у нас только что был предсмертный опыт.
 {{/if}}
 
 ```
@@ -328,21 +328,21 @@ hong({eyes:"normal"});
 bb({eyes:"annoyed_d", mouth:"narrow"});
 ```
 
-b: Well, it makes everything else less scary in comparison. It's also got me thinking.
+b: Ну, это делает всё остальное менее страшным в сравнении. Это также заставило меня задуматься.
 
 `bb({eyes:"normal", mouth:"normal"});`
 
-b: If me fighting you sucks, because it doesn't protect you...
+b: Если мы сражаемся, то ты проигрываешь, потому это не защищает тебя...
 
-h: But me fighting you *also* sucks, because it just makes you yell louder...
+h: Но когда мы сражаемся, то ты *тоже* проигрываешь, потому что это просто заставляет тебя кричать громче...
 
 `bb({eyes:"normal_r"})`
 
-b: Then maybe...
+b: Тогда, может быть...
 
 `bb({eyes:"normal"})`
 
-h: Maybe we don't have to fight.
+h: Может мы не должны сражаться.
 
 ```
 Game.FORCE_CANT_SKIP = true;
@@ -381,15 +381,15 @@ music('dontfight',{fade:5, volume:0.6});
 bb({eyes:"annoyed_d"});
 ```
 
-b: I'm not a Big Bad Wolf. But I'm not a guard-wolf either.
+b: Я не Большой Плохой Волк. Но я и не сторожевой волк тоже.
 
 `bb({eyes:"sad_d"})`
 
-b: I'm a battered shelter dog.
+b: Я побитая приёмная собака.
 
 `bb({eyes:"sad"})`
 
-b: We've been through rough stuff. Maybe trauma or neglect. That's why I sometimes over-react and go:
+b: Мы прошли через трудные времена. Может быть, травму или пренебрежение. Вот почему я иногда слишком остро реагирую и говорю:
 
 ```
 sfx("yaps", {volume:0.6});
@@ -400,7 +400,7 @@ Game.FORCE_TEXT_DURATION = 90;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: YAP YAP YAP YAP YAP
+b: ТЯФ ТЯФ ТЯФ ТЯФ ТЯФ
 
 (...1884)
 
@@ -410,35 +410,35 @@ Game.FORCE_CANT_SKIP = false;
 bb({body:"normal", mouth:"scream", eyes:"scream_sad"});
 ```
 
-b: But I don't *want* to be a cowardly dog! I want to protect you! I want to be a good dog!
+b: Но я *не хочу* быть трусливой собакой! Я хочу защищать тебя! Я хочу быть хорошей собакой!
 
 `bb({eyes:"sad", mouth:"normal"});`
 
-b: Human... will you help tame this wolf?
+b: Человек... ты поможешь приручить этого волка?
 
 `hong({eyes:"sad"})`
 
-h: I... I'll try.
+h: Я... Я попробую.
 
 `hong({eyes:"normal_l", body:"chin", mouth:"narrow"})`
 
-h: Okay. Healthy relationship with emotions. Relationships need communication. So, let's communicate.
+h: Окей. Здоровые отношения с эмоциями. Отношениям нужна коммуникация. Так что, давай коммуницировать.
 
 `hong({eyes:"normal", body:"hands_1", mouth:"normal"})`
 
-h: The next five minutes are going to sound super cheesy, but let's fake it 'til we make it.
+h: Следующие пять минут будут казаться супер стрёмными, но давай притворяться, пока мы не сделаем это.
 
 ```
 hong({body:"hands_2", mouth:"normal"});
 ```
 
-h: Dear inner wolf... how are *you* feeling?
+h: Дорогой внутренний волк... как *ты* себя чувствуешь?
 
-n2: TOTAL FEARS USED:
+n2: ИСПОЛЬЗОВАННЫЕ СТРАХИ:
 
-n2: *HARMED* {{_.attack_harm_total}}, *UNLOVED* {{_.attack_alone_total}}, *BAD PERSON* {{_.attack_bad_total}}
+n2: *ВРЕД* {{_.attack_harm_total}}, *НЕЛЮБОВЬ* {{_.attack_alone_total}}, *РЕПУТАЦИЯ* {{_.attack_bad_total}}
 
-n2: WHAT FEAR DO YOU WANT TO TALK ABOUT FIRST? (YOU CAN DO THE OTHERS LATER)
+n2: О КАКОМ СТРАХЕ ТЫ ХОЧЕШЬ ПОГОВОРИТЬ В ПЕРВУЮ ОЧЕРЕДЬ? (ТЫ СМОЖЕШЬ ВЫБРАТЬ ДРУГИЕ ПОЗЖЕ)
 
 ```
 _.a4_fears_discussed = 0;
@@ -447,11 +447,11 @@ hong({body:"normal"});
 bb({eyes:"normal"});
 ```
 
-[I'm scared we'll be harmed.](#act4_harm)
+[Я боюсь что нам навредят.](#act4_harm)
 
-[I'm scared we'll be alone.](#act4_alone)
+[Я боюсь, что мы останемся одинокими.](#act4_alone)
 
-[I'm scared we're bad people.](#act4_bad)
+[Я боюсь, что мы плохие люди.](#act4_bad)
 
 # act4_harm
 
@@ -462,92 +462,94 @@ _.a4_fears_discussed += 1;
 
 `bb({eyes:"normal_d"})`
 
-b: I want to protect your need for physical safety,
+b: Я хочу защитить твою потребность в физической безопасности,
 
 `bb({eyes:"sad_d"})`
 
-b: But the *whole world* seems so dangerous. So full of tragedy and evil.
+b: Но *весь мир* кажется таким опасным. Так много трагедий и зла.
 
 `bb({eyes:"sad"})`
 
 {{if _.a4_fears_discussed==1}}
-b: I dunno, enough of *me* choosing what to say next. What do *you* say, human?
+b: Я не знаю, достаточно того, что *я* выбираю, что сказать дальше. Что *ты* скажешь, человек?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: Again, back to you, human. What do you think?
+b: И снова, возвращаясь к тебе, человек. Что ты думаешь?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: More thoughts, human?
+b: Ещё мысли, человек?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[You're right. So let's protect ourselves.](#act4_harm_skills)
+[Ты прав. Давай защищаться.](#act4_harm_skills)
 
-[Let's expose ourselves to *more* danger.](#act4_harm_exposure)
+[Давайте подвергнем себя ещё *большей* опасности.](#act4_harm_exposure)
 
-[Thank you.](#act4_thanks) `_.thanks_for = "physical safety";`
+[Спасибо.](#act4_thanks) `_.thanks_for = "физической безопасности";`
 
 # act4_harm_skills
 
 `bb({eyes:"look_down", body:"paw"})`
 
-b: But... how? I have fangs and claws, but I'm just a metaphor.
+b: Но... как? У меня есть клыки и когти, но я всего лишь метафора.
 
 ```
 bb({ body:"normal", eyes:"normal" });
 hong({ body:"one_up", eyes:"surprise" });
 ```
 
-h: We could learn self-defense? Join a community that protects each other? Improve our general health & personal boundaries?
+h: Мы могли бы научиться самообороне? Присоединиться к сообществам, которые защищают друг друга?
+
+h: Улучшить наше общее состояние здоровья и личные границы?
 
 ```
 bb({ eyes:"annoyed_r" });
 hong({ body:"normal", eyes:"normal" });
 ```
 
-b: Maybe, but...
+b: Может быть, но...
 
-[Where do we even start?](#act4_harm_skills_start)
+[С чего мы вообще начнём?](#act4_harm_skills_start)
 
-[What if they still don't work?](#act4_harm_skills_work)
+[Что, если они всё ещё не работают?](#act4_harm_skills_work)
 
-[What if we go overboard on "safety"?](#act4_harm_skills_overboard)
+[Что, если мы переборщим с "безопасностью"?](#act4_harm_skills_overboard)
 
 # act4_harm_skills_start
 
 `bb({ eyes:"sad_d" })`
 
-b: There's so much to do, so much we need to fix about ourselves. What do we even *begin* with?
+b: Так много нужно сделать, так много мы должны исправить в себе. Когда мы вообще *начнём*?
 
 `hong({ body:"shrug", eyes:"surprise" })`
 
-h: We're beginning right now.
+h: Мы начинаем прямо сейчас.
 
 `bb({ eyes:"normal", mouth:"narrow" })`
 
-b: Eh?
+b: Ээ?
 
 ```
 bb({ body:"normal", mouth:"normal" });
 hong({ body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: We're practicing good communication right now. Which will help us detect danger better, with fewer false positives,
+h: Сейчас мы практикуем хорошее общение. Что поможет нам обнаруживать опасность лучше, с меньшим числом ложных срабатываний,
 
 `hong({ eyes:"surprise" });`
 
-h: And *that* will help protect us from harm!
+h: И *это* поможет защитить нас от увечий!
 
 `hong({ eyes:"normal", mouth:"normal" });`
 
-h: Therefore: this *is* self-defense training.
+h: Поэтому: *это* обучение самообороне.
 
 `bb({ eyes:"normal_r" })`
 
-b: Huh. I was expecting more of this:
+b: Хах. Я больше ожидал что-то такого:
 
 ```
 Game.FORCE_CANT_SKIP = true;
@@ -567,26 +569,26 @@ sfx("hiya");
 
 `bb({ eyes:"normal" });`
 
-h: True, there's no way to 100% protect ourselves...
+h: Правда, способа защитить себя на 100% не существует...
 
 `hong({ body:"one_up" });`
 
-h: But even a 1% improvement is still worth something, right?
+h: Но даже прогресс в 1% уже стоит того, верно?
 
 ```
 bb({ eyes:"annoyed" });
 hong({ normal:"one_up" });
 ```
 
-b: You're seeing the glass as not 99% empty, but 1% full?
+b: Ты видишь стакан не на 99% пустым, а на 1% полным?
 
 `bb({ eyes:"normal" });`
 
-h: Which is still worth something if you're stranded in the desert.
+h: Что всё ещё имеет ценность, если ты застрял в пустыне.
 
 `bb({ eyes:"closed" });`
 
-b: Well. Bottoms up, then.
+b: Что ж. Тогда пей до дна.
 
 (#act4_something_else)
 
@@ -594,73 +596,74 @@ b: Well. Bottoms up, then.
 
 `bb({ body:"chest", eyes:"annoyed" })`
 
-b: I mean, the whole reason you ignored my warnings was because *I* went overboard with safety! 
+b: Я имею в виду, причина, по которой ты игнорировал мои предупреждения, была в том, что я переборщил с безопасностью!
 
 `bb({ body:"normal", eyes:"normal" })`
 
-h: Naw, you're right. We would want to do safety in moderation. Everything in moderation.
+h: Не, ты прав. Мы хотим сделать умеренную безопасность. Всё в меру.
 
 `bb({ eyes:"suspect" })`
 
-b: Sorry, *EVERYTHING* in moderation?
+b: Прости, *ВСЁ* в меру?
 
 `hong({ eyes:"annoyed" })`
 
-h: *A moderate number of things* in moderation.
+h: *Умеренное число вещей* в меру.
 
 ```
 bb({ eyes:"closed" });
 hong({ eyes:"normal" });
 ```
 
-b: Thank you for making your statements recursively self-consistent.
+b: Спасибо, что сделал свои утверждения рекурсивно самосогласованными.
 
 (#act4_something_else)
-
 
 # act4_harm_exposure
 
 `bb({ mouth:"scream_talk", eyes:"scream", MOUTH_LOCK:true });`
 
-b: *WHAT*
+b: *ЧТО*
 
 ```
 bb({ mouth:"narrow", eyes:"suspect" });
 hong({ body:"one_up" });
 ```
 
-h: I mean, let's say a dog is scared of thunder.
+h: Ну, скажем, собака боится грома.
 
 `hong({ body:"hands_1" });`
 
-h: One trick trainers use is to play a recording of thunder at a low volume, then give the dog a treat for staying calm.
+h: Дрессировщики используют один трюк, они проигрывают запись грома на низкой громкости,
+
+h: а затем дают собаке лакомство для сохранения спокойствия.
 
 `hong({ body:"hands_2" });`
 
-h: Over several days, the trainer raises the volume bit by bit, until the dog has overcome their fear of thunder.
+h: В течение нескольких дней дрессировщик постепенно повышает громкость, пока собака не преодолеет свой страх перед громом.
 
 ```
 hong({ body:"normal", eyes:"surprise" });
 bb({ mouth:"normal", eyes:"normal" });
 ```
 
-h: It's called exposure therapy!
+h: Это называется экспозиционной терапией!
 
 `hong({ body:"point", eyes:"normal" });`
 
-h: Since you're a dog, it should work for you too, right? All mammals have the same fight-or-flight response.
+h: Поскольку ты собака, это должно сработать и для тебя, верно? У всех млекопитающих одинаковая реакция "борись или беги".
 
 `hong({ body:"normal" });`
 
-[What if we desensitize *too* much?](#act4_harm_exposure_overboard)
+[Что делать, если мы *слишком* десенсибилизируем?](#act4_harm_exposure_overboard)
 
-[What if we're exposed to *real* danger?](#act4_harm_exposure_hurt)
+[Что, если мы подвергнемся *реальной* опасности?](#act4_harm_exposure_hurt)
 
-[I'm a wolf, not a dog.](#act4_harm_exposure_dog) `bb({ eyes:"suspect" })`
+[Я волк, а не собака.](#act4_harm_exposure_dog) `bb({ eyes:"suspect" })`
 
 # act4_harm_exposure_dog
 
-h: And I'll show you kindness and patience 'til you're domesticated into a cute lil' puppy.
+h: И я буду проявлять к тебе доброту и терпение, пока ты не превратишься в милого маленького щенка.
 
 `bb({ MOUTH_LOCK:true })`
 
@@ -668,7 +671,7 @@ b: ...
 
 `bb({ eyes:"sad", mouth:"smile" })`
 
-b: D'aw.
+b: Ооо.
 
 (#act4_something_else)
 
@@ -676,35 +679,35 @@ b: D'aw.
 
 `bb({ eyes:"annoyed" })`
 
-b: We *just* saw what happens if you shut down your fear – you put yourself in *actually* dangerous situations.
+b: Мы *просто* видели, что происходит, если ты закрываешь свой страх – ты ставишь себя в *действительно* опасные ситуации.
 
 `bb({ eyes:"angry_r", body:"one_up" })`
 
-b: Besides, won't *too* much desensitization turn us into psychopaths?
+b: Кроме того, разве *слишком* сильная десенсибилизация не превратит нас в психопатов?
 
 `bb({ mouth:"scream", eyes:"scream", body:"two_up" })`
 
-b: Soon we'll give ourselves treats while watching snuff murder porn!
+b: Скоро мы будем вознаграждать себя во время просмотра убийственных снафф порно!
 
 `hong({ eyes:"annoyed" })`
 
-h: I... think there's a line between that and the thunder.
+h: Я... думаю, между этим и громом всё же есть граница.
 
 `bb({ body:"normal", mouth:"normal", eyes:"suspect" })`
 
-b: But exactly *where*, human? *Where?!*
+b: Но *где* именно, человек? *Где?!*
 
 `hong({ eyes:"surprise", body:"one_up" })`
 
-h: I don't know. But *you* can help me!
+h: Я не знаю. Но *ты* можешь мне помочь!
 
 `hong({ eyes:"normal", body:"normal" })`
 
-h: Working and negotiating with you, we'll draw that line.
+h: Работая и ведя переговоры с тобой, мы проведём эту линию.
 
 `bb({ body:"paw", mouth:"narrow", eyes:"closed" })`
 
-b: Okay. But I've got no opposable thumbs, so you have to do the drawing.
+b: Окей. Но у меня нет больших пальцев, так что ты должен сделать рисунок.
 
 (#act4_something_else)
 
@@ -713,11 +716,11 @@ b: Okay. But I've got no opposable thumbs, so you have to do the drawing.
 `bb({ body:"two_up", eyes:"angry_r" })`
 
 {{if _.INJURED}}
-b: For example: we jumped off a freaking *roof!*
+b: Например: мы спрыгнули с чёртовой *крыши!*
 {{/if}}
 
 {{if !_.INJURED}}
-b: For example: we almost jumped off a freaking *roof!*
+b: Например: мы почти что спрыгнули с чёртовой *крыши!*
 {{/if}}
 
 ```
@@ -725,17 +728,17 @@ hong({ eyes:"annoyed" });
 bb({ body:"normal", eyes:"annoyed" });
 ```
 
-h: Nah you're right. One *can* go too far.
+h: Не, ты прав. Один из нас *может* зайти слишком далеко.
 
 `hong({ eyes:"normal" });`
 
-h: But that's why, if we do exposure therapy, we'll start small, and make small steps upward.
+h: Но именно поэтому, если мы будем проводить экспозиционную терапию, то начнём с малого и будем делать маленькие шаги вперёд.
 
-h: Just before we hit *actual* danger, we stop.
+h: Как раз, когда мы столкнёмся с *реальной* опасностью, мы остановимся.
 
 `bb({ eyes:"annoyed_r", mouth:"narrow" });`
 
-b: Yeah I draw the line between hearing loud thunder, and standing in a storm with a tall pointy hat.
+b: Да, я провожу черту между слышаньем громкого грома, и стоянием в буре с высокой остроконечной шляпой.
 
 (#act4_something_else)
 
@@ -763,11 +766,11 @@ b: ...
 
 `bb({ eyes:"annoyed" })`
 
-b: Wait, no arguments for or against what I'm feeling? Just... "thank you"?
+b: Подожди, никаких аргументов за или против того что я чувствую? Просто... "спасибо"?
 
 `hong({ eyes:"surprise", body:"shrug" })`
 
-h: Yeah! Thank you for showing your concern for my {{_.thanks_for}}.
+h: Да! Спасибо, что проявил свою заботу о моей {{_.thanks_for}}.
 
 ```
 bb({ eyes:"closed_annoyed", MOUTH_LOCK:true });
@@ -776,72 +779,69 @@ hong({ eyes:"normal", body:"normal" });
 
 b: ...
 
-h: You okay?
+h: Ты в порядке?
 
 `bb({ eyes:"super_sad", mouth:"narrow" });`
 
-b: You've never said *thank you* to me before.
+b: Ты никогда прежде не говорил мне *спасибо*.
 
 `hong({ mouth:"smile" });`
 
-h: Aw you big fuzzy-wuzzy panic-wolf.
+h: Ооо ты большой мягкий-тёплый волк-паникёр.
 
 (#act4_something_else)
 
 # act4_thanks_2
 
-h: Even if you over-react, I appreciate you looking out for my {{_.thanks_for}}.
+h: Даже если ты слишком остро реагируешь, я ценю, что ты заботишься о моей {{_.thanks_for}}.
 
 `bb({ eyes:"annoyed" })`
 
-b: Wait... you're not just repeating "thank you" to avoid actually talking about these fears, are you?
+b: Погоди... ты ведь не просто повторяешь "Спасибо", чтобы на самом деле не говорить об этих страхах, не так ли?
 
 ```
 bb({ eyes:"normal" });
 hong({ eyes:"annoyed", body:"chin" });
 ```
 
-h: Well, stuff's complicated, and I don't always have answers ready.
+h: Ну, всё сложно, и у меня не всегда есть готовые ответы.
 
 `hong({ eyes:"annoyed_l", body:"one_up" })`
 
-h: It's not like life gives you a list of 3 pre-made dialogue responses.
+h: Это не похоже на то, что жизнь даёт тебе список из 3-х готовых диалоговых ответов.
 
 `hong({ eyes:"normal", mouth:"smile", body:"normal" })`
 
-h: But for now, at least I can at least say thanks.
+h: Но сейчас, по крайней мере, я могу хотя бы сказать спасибо.
 
-b: Well, thank you too, for listening to me patiently.
+b: Что ж, спасибо и тебе, что терпеливо меня выслушал.
 
 `bb({ eyes:"closed" });`
 
-b: You small hairless flesh-mammal.
+b: Ты маленький, безволосый, кожный млекопитающий.
 
 (#act4_something_else)
 
 # act4_thanks_3
 
-h: Even if your yapping scares me, you're simply trying to protect my {{_.thanks_for}}.
+h: Даже если твоё тявканье пугает меня, ты просто пытаешься защитить мою {{_.thanks_for}}.
 
 `bb({ eyes:"smile_r" });`
 
-b: Okay, if you keep flattering me like this, the internet's gonna get some weird ideas about us.
+b: Так, если ты и дальше будешь так мне льстить, в интернете появятся странные идеи о нас.
 
 ```
 bb({ eyes:"smile" });
 hong({ eyes:"annoyed" });
 ```
 
-h: C'mon, I'm just a vulnerable college-age kid and you're a big, scary wolf. What's the worst that cou--
+h: Да ладно, я просто уязвимый ребёнок студенческого возраста, а ты большой, страшный волк. Что плохого может--
 
 `hong({ eyes:"normal", body:"point" });`
 
-h: Actually, do not answer that.
+h: Правда, не отвечай на это.
 
 (#act4_something_else)
-
-
-
 
 # act4_alone
 
@@ -852,33 +852,33 @@ _.a4_fears_discussed += 1;
 
 `bb({ eyes:"sad_d" });`
 
-b: I want to make sure you fulfil that deep, human need to belong...
+b: Я хочу убедиться, что ты удовлетворяешь эту глубокую, человеческую потребность в принадлежности...
 
 `bb({ eyes:"sad_u" });`
 
-b: But I worry that if anyone ever knew us – the *real* us – we'd scare them all away.
+b: Но я беспокоюсь, что если кто-нибудь когда-нибудь узнает нас *настоящих* - мы отпугнем их всех.
 
 `bb({ eyes:"sad" });`
 
 {{if _.a4_fears_discussed==1}}
-b: I dunno, enough of *me* choosing what to say next. What do *you* say, human?
+b: Я не знаю, достаточно того, что *я* выбираю, что сказать дальше. Что *ты* скажешь, человек?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: Again, back to you, human. What do you think?
+b: И снова, возвращаясь к тебе, человек. Что ты думаешь?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: More thoughts, human?
+b: Ещё мысли, человек?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[I agree: let's work on our social life.](#act4_alone_skills)
+[Я согласен: поработаем с нашей социальной жизнью.](#act4_alone_skills)
 
-[I think people like us. Let's find out?](#act4_alone_experiment)
+[Я думаю мы нравимся людям. Давай выясним?](#act4_alone_experiment)
 
-[Thank you.](#act4_thanks) `_.thanks_for = "social belonging";`
+[Спасибо.](#act4_thanks) `_.thanks_for = "социальной принадлежности";`
 
 # act4_alone_skills
 
@@ -887,60 +887,60 @@ bb({ eyes:"normal" });
 hong({ body:"chin" });
 ```
 
-h: We could practice skills like asking questions, listening and empathizing, being open and vulnerable, etc?
+h: Мы могли бы практиковать такие навыки, как задавать вопросы, слушать и сопереживать, быть открытыми и уязвимыми и т.д.?
 
 `hong({ eyes:"normal_l" });`
 
-h: Or make better social habits, like scheduling time with friends or regularly going to meetups?
+h: Или сделать лучше социальные привычки, как планирование времени с друзьями или регулярные знакомства?
 
 `hong({ body:"one_up" });`
 
-h: Could also learn to get more comfortable with rejection.
+h: Можно также научиться чувствовать себя более комфортно с отказами.
 
 `hong({ eyes:"normal" });`
 
-h: Or learn to know when people *aren't* rejecting us, they're just tired or have Resting ^Bitch^ Face.
+h: Или научиться знать, когда люди *не* отвергают нас, потому что они просто устали или имеют Синдром Стервозного Лица.
 
 ```
 hong({ body:"normal" });
 bb({ eyes:"annoyed_r" });
 ```
 
-b: That's a lot of options. But, about "learning social skills"...
+b: Много вариантов. Но, говоря об "изучении социальных навыков"...
 
-[Isn't that *manipulative?*](#act4_alone_skills_manipulative)
+[Это не *манипуляция?*](#act4_alone_skills_manipulative)
 
-[Won't that make us *easier to manipulate?*](#act4_alone_skills_manipulated)
+[Это не делает нас *уязвимыми для манипуляций?*](#act4_alone_skills_manipulated)
 
-[What if we still fail?](#act4_alone_skills_fail)
+[Что, если мы всё равно потерпим неудачу?](#act4_alone_skills_fail)
 
 # act4_alone_skills_manipulative
 
 `bb({ eyes:"suspect" });`
 
-b: Aren't serial killers who can read their victims' emotions great at "empathy"?
+b: Разве серийные убийцы, умеющие читать эмоции своих жертв, не умеют "сопереживать"?
 
 `bb({ eyes:"annoyed" });`
 
-b: Didn't Charles Manson win friends and influence people?
+b: Разве Чарльз Мэнсон не завоёвывал друзей и не влиял на людей?
 
 `hong({ eyes:"annoyed", body:"chin" });`
 
-h: No, you're right.
+h: Нет, ты прав.
 
-h: "Social skills" mean nothing if we don't genuinely care *for* people.
+h: "Социальные навыки" ничего не значат, если мы действительно не заботимся *о* людях.
 
 `hong({ body:"normal" });`
 
-h: Basically, just don't be a ^dick^.
+h: Проще говоря, просто не будь мудаком.
 
 `bb({ eyes:"annoyed", mouth:"smile" });`
 
-b: That's a motivational poster caption right there.
+b: Это мотивационный заголовок плаката прямо вон там.
 
 `hong({ body:"shrug", mouth:"narrow" });`
 
-h: “Don't Be A ^Dick^™”
+h: "Не будь мудаком™"
 
 (#act4_something_else)
 
@@ -948,29 +948,29 @@ h: “Don't Be A ^Dick^™”
 
 `bb({ eyes:"angry" })`
 
-b: We'll become a Welcome doormat, saying Please and Thank You as people wipe their feet on us!
+b: Мы станем желанным ковриком, говоря "Пожалуйста" и "Спасибо", когда люди вытирают о нас ноги!
 
 `bb({ mouth:"scream", eyes:"scream" })`
 
-b: We'll kiss so much butt, it'll look like we're wearing brown lipstick!
+b: Мы будем целовать так много задниц, что это будет выглядеть так, будто мы носим коричневую помаду!
 
 ```
 bb({ mouth:"normal", eyes:"normal" });
 hong( body:"chin" });
 ```
 
-h: Nah, you're right. "Social skills" can't be just about pleasing others, it's also got to be about setting *boundaries.*
+h: Ох, ты прав. "Социальные навыки" не могут быть просто о том, чтобы угождать другим, они также об установке *границ.*
 
 `hong( body:"one_up" });`
 
-h: We can't invite others into our home, if we have no walls to hold up our home.
+h: Мы не можем приглашать других в наш дом, если у нас нет стен, чтобы поддержать наш дом.
 
 ```
 hong( eyes:"angry", mouth:"narrow" });
 bb( eyes:"annoyed", mouth:"smile" });
 ```
 
-h: Also... re: that lipstick mental image... *ew??*
+h: Кстати... re: тот мысленный образ губной помады... *фу??*
 
 (#act4_something_else)
 
@@ -978,26 +978,26 @@ h: Also... re: that lipstick mental image... *ew??*
 
 `bb({ eyes:"annoyed" });`
 
-h: We might fail. Actually, we *will* fail.
+h: Мы можем потерпеть неудачу. На самом деле, мы *потерпим* неудачу.
 
 ```
 bb({ eyes:"normal" });
 hong({ eyes:"surprise", body:"shrug" });
 ```
 
-h: And that's fine! Failing is how anyone learns anything new at first!
+h: И это прекрасно! Неудача - это то, как начать узнавать что-то новое!
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: So let's fail forward together, yeah?
+h: Так что давайте двигаться вперед вместе, хорошо?
 
 `bb({ eyes:"normal_r" });`
 
-b: Sure, I guess... worst-case scenario, we can just skip town and get a new identity.
+b: Конечно, я согласен... в худшем случае, мы можем просто сбежать из города и создать новую личность.
 
 `bb({ eyes:"normal" });`
 
-h: Yeah I think that only costs two bitcoins these days.
+h: Да, я думаю, сейчас это стоит около двух биткоинов.
 
 (#act4_something_else)
 
@@ -1008,33 +1008,33 @@ hong({ body:"one_up" });
 bb({ eyes:"normal" });
 ```
 
-h: We could try some experiments!
+h: Мы могли бы попробовать некоторые эксперименты!
 
 `hong({ body:"chin" });`
 
-h: We could ping a friend to hang out, reconnect with an old pal, or even just chat with a barista.
+h: Мы могли бы связаться с другом, чтобы пообщаться, восстановить связь со старым приятелем или даже просто пообщаться с бариста.
 
 `hong({ body:"normal" });`
 
-h: I think we may find we're more likeable than we suspect.
+h: Думаю, мы обнаружим, что мы более привлекательны, чем думаем.
 
 `bb({ eyes:"annoyed" });`
 
-[What if these are small, cheap "wins"?](#act4_alone_experiment_cheap)
+[Что, если это маленькие, дешёвые "победы"?](#act4_alone_experiment_cheap)
 
-[What if this is a burden to others?](#act4_alone_experiment_burden)
+[Что, если это бремя для других?](#act4_alone_experiment_burden)
 
-[But small talk isn't the *real* us!](#act4_alone_experiment_real_us)
+[Но светская беседа это ещё не *настоящие* мы!](#act4_alone_experiment_real_us)
 
 # act4_alone_experiment_real_us
 
 `bb({ eyes:"sad" });`
 
-b: If we put on a shallow smile, we'll never really connect with anyone,
+b: Если мы нацепим на себя фальшивую улыбку, то мы никогда ни с кем не свяжемся по-настоящему,
 
 `bb({ eyes:"super_sad" });`
 
-b: *But* if we open up, other people will see all our messed-up insides!
+b: *Но* если мы откроемся, то другие люди увидят все наши испорченные внутренности!
 
 `hong({body:"chin", mouth:"narrow", MOUTH_LOCK:true})`
 
@@ -1045,64 +1045,63 @@ hong({body:"normal", mouth:"normal"});
 bb({eyes:"normal"});
 ```
 
-h: Roll over.
+h: Перевернись.
 
-b: What.
+b: Что.
 
 `hong({body:"hands_1"})`
 
-h: When dogs want to show love and trust, they make themselves vulnerable by exposing their belly.
+h: Когда собаки хотят показать свою любовь и доверие, они делают себя уязвимыми, обнажая свой живот.
 
 `hong({body:"one_up"})`
 
-h: Maybe we're not *yet* secure enough to be too vulnerable, but with enough training,
+h: Может быть, мы *ещё* недостаточно защищены, чтобы быть слишком уязвимыми, но хорошо потренировавшись,
 
 `hong({body:"normal", eyes:"surprise"})`
 
-h: One day we can show people the real us – all messed-up, all human.
+h: Когда-нибудь мы сможем показать людям настоящих нас – полностью испорченных, но всем людям.
 
 ```
 hong({eyes:"normal"});
 bb({ eyes:"super_sad", mouth:"smile", body:"chest" });
 ```
 
-b: I'll roll over if you give me a treat.
+b: Я перевернусь если ты дашь мне вкусняшку.
 
 `bb({ eyes:"normal", mouth:"normal" });`
 
-h: No.
+h: Нет.
 
 (#act4_something_else)
 
-
 # act4_alone_experiment_cheap
 
-b: Saying "hi" to the barista isn't exactly gold-medal performance in the Social Butterfly Olympics.
+b: Сказать "Привет" баристе это не совсем выступление с золотой медалью на Социальной Сетевой Олимпиаде.
 
 ```
 hong({ body:"point", eyes:"surprise" });
 bb({ eyes:"normal" });
 ```
 
-h: It is for *us!*
+h: Это для *нас!*
 
 `hong({ body:"one_up", eyes:"annoyed" });`
 
-h: In the social arena, we're not even featherweight class, we're like... quark-weight.
+h: На социальной арене мы даже не в полулегком весе, мы такие... кварк-вес.
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: If we have to start with small, cheap wins, so be it. Gotta climb the 1st step before the 1000th step.
+h: Если мы должны начать с маленьких, дешёвых побед, то так тому и быть. Нужно подниматься с 1-го до 1000-го шага.
 
-b: Yeah! Maybe after saying "Hi", we can advance to saying...
+b: Да! Может быть, сказав "Привет", мы сможем перейти к разговору...
 
 `bb({ body:"two_up", mouth:"smile", eyes:"smile_u" });`
 
-b: *"How are you?"*
+b: *"Как ты?"*
 
 `hong({ body:"shrug", mouth:"smile", eyes:"surprise_l" });`
 
-h: *"Not much!"*
+h: *"Не очень!"*
 
 (#act4_something_else)
 
@@ -1110,33 +1109,33 @@ h: *"Not much!"*
 
 `bb({ eyes:"suspect_r" })`
 
-b: Maybe the barista just wants to make some dang coffee, not be an *experiment* to see if our social skills suck.
+b: Может быть, бариста просто хочет сделать какой-нибудь чёртов кофе,
+
+b: а не быть *экспериментом* и видеть насколько плохи наши социальные навыки.
 
 `bb({ eyes:"annoyed" })`
 
-h: Well, if it turns out we *are* being a burden...
+h: Ну, если окажется, что мы *являемся* обузой...
 
 ```
 hong({ eyes:"surprise" });
 bb({ eyes:"normal" });
 ```
 
-h: That's good to know, too!
+h: Это тоже хорошо знать!
 
 `hong({ eyes:"normal" });`
 
-h: We can then learn how to pro-actively ask people what they're comfortable with, to know and respect others' boundaries.
+h: Так мы сможем научиться активно расспрашивать людей об их комфорте, знать и уважать границы других.
 
 ```
 hong({ eyes:"annoyed_l", mouth:"narrow" });
 bb({ eyes:"annoyed", mouth:"smile" });
 ```
 
-h: Y'know, all that "inter-personal skills" ^crap^ we see in counselor brochures.
+h: Знаешь, все эти ^дерьмовые^ "межличностные навыки" что мы видим в брошюрах консультантов.
 
 (#act4_something_else)
-
-
 
 # act4_bad
 
@@ -1147,43 +1146,43 @@ _.a4_fears_discussed += 1;
 
 `bb({ eyes:"annoyed_r" })`
 
-b: I want to defend your moral needs, that drive to become a better person,
+b: Я хочу защитить твои моральные потребности, то стремление стать лучшим человеком,
 
 `bb({ eyes:"sad_d" })`
 
-b: But it just feels like deep down, we're so fundamentally... broken.
+b: Но мне просто кажется, что в глубине души мы фундаментально... сломаны.
 
 `bb({ body:"two_up", eyes:"angry" })`
 
 {{if _.INJURED}}
-b: And don't tell me we're *not* messed up. We jumped off a *roof*.
+b: И не говори мне, что мы *не* запутаны. Мы спрыгнули с *крыши*.
 {{/if}}
 
 {{if !_.INJURED}}
-b: And don't tell me we're *not* messed up. We almost jumped off a *roof*.
+b: И не говори мне, что мы *не* запутаны. Мы чуть не спрыгнули с *крыши*.
 {{/if}}
 
 `bb({ body:"normal", eyes:"sad" })`
 
 {{if _.a4_fears_discussed==1}}
-b: I dunno, enough of *me* choosing what to say next. What do *you* say, human?
+b: Не знаю, достаточно того, что *я* выбираю, что сказать дальше. Что *ты* скажешь, человек?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-b: Again, back to you, human. What do you think?
+b: И снова, возвращаясь к тебе, человек. Что ты думаешь?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
-b: More thoughts, human?
+b: Ещё мысли, человек?
 {{/if}}
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[So we're broken. Let's fix us.](#act4_bad_fix)
+[Что ж, мы сломаны. Давай исправим нас.](#act4_bad_fix)
 
-[So we're broken. Let's accept it.](#act4_bad_accept)
+[Что ж, мы сломаны. Давай примем это.](#act4_bad_accept)
 
-[Thank you.](#act4_thanks) `_.thanks_for = "moral well-being";`
+[Спасибо.](#act4_thanks) `_.thanks_for = "моральном благополучии";`
 
 # act4_bad_fix
 
@@ -1192,48 +1191,48 @@ bb({eyes:"normal"});
 hong({body:"chin"});
 ```
 
-h: We could slowly build better habits, get our life more in line with what we value,
+h: Мы могли бы постепенно выработать лучшие привычки, привести нашу жизнь в соответствие с тем, что мы ценим,
 
 `hong({body:"one_up"});`
 
-h: And if needed, we could get professional help – a therapist or counsellor.
+h: А при необходимости мы могли бы получить профессиональную помощь терапевта или консультанта.
 
 `hong({body:"normal"});`
 
-h: There's ways to fix us.
+h: Есть способы нас исправить.
 
-[What if we can't fix it all?](#act4_bad_fix_cant)
+[Что, если мы не сможем все исправить?](#act4_bad_fix_cant)
 
-[What if we fix *too* much?](#act4_bad_fix_too_much)
+[Что делать, если мы *слишком* десенсибилизируем?](#act4_bad_fix_too_much)
 
-[We can't afford professional help.](#act4_bad_fix_afford)
+[Мы не можем позволить профессиональную помощь.](#act4_bad_fix_afford)
 
 # act4_bad_fix_cant
 
 `hong({eyes:"annoyed"});`
 
-h: Nah, I guess you're right.
+h: Не, наверное ты прав.
 
-h: We can't fix it all.
+h: Мы не можем исправить всё.
 
 `bb({mouth:"scream", eyes:"scream_sad"});`
 
-b: Ahhh I knew it we'll always be broken!
+b: Ах, я знал, что мы всегда будем сломаны!
 
 `hong({eyes:"surprise"});`
 
-h: But we can at least be *less* broken.
+h: Но, по крайней мере, мы можем быть *менее* сломанными.
 
 ```
 bb({mouth:"normal", eyes:"annoyed"});
 hong({eyes:"sad", mouth:"smile"});
 ```
 
-h: Scars heal with time, but they never go away. And that's okay.
+h: Шрамы со временем заживают, но никогда не исчезают. И это нормально.
 
 `bb({eyes:"annoyed_r"});`
 
-b: I guess. Besides,
+b: Согласен. Кроме того,
 
 ```
 Game.FORCE_TEXT_Y = 460;
@@ -1241,7 +1240,7 @@ Game.clearText();
 publish("act4-sexy", [true]);
 ```
 
-b: Scars are *sexy.*
+b: Шрамы *сексуальны.*
 
 ```
 Game.FORCE_TEXT_Y = -1;
@@ -1251,7 +1250,7 @@ bb({body:"chest", mouth:"smile_talk", MOUTH_LOCK:true, eyes:"sexy"}, 0);
 hong({eyes:"normal", mouth:"normal"}, 0);
 ```
 
-h: Please do not do that.
+h: Пожалуйста не делай этого.
 
 (#act4_something_else)
 
@@ -1259,35 +1258,35 @@ h: Please do not do that.
 
 `bb({ eyes:"angry_d" })`
 
-b: This feels sick to admit, but... some part of me *wants* to have this disorder.
+b: Это неприятно признавать, но... какая-то часть меня *хочет* иметь это расстройство.
 
 `bb({ eyes:"angry" })`
 
-b: I mean, without it, won't we be *boring?*
+b: Я имею ввиду, без него, мы не станем *скучными?*
 
 `bb({ eyes:"sad_r", body:"one_up" })`
 
-b: Without the disorder, won't our art become stale and bland?
+b: Без расстройства мы не станем чёрствыми и пресными?
 
 `bb({ eyes:"sad_u", body:"two_up" })`
 
-b: Without the disorder, won't we be unable to connect with our friends who have the disorder?
+b: Без расстройства мы не сможем связаться с нашими друзьями, у которых тоже есть это расстройство?
 
 `bb({ eyes:"sad", body:"chest" })`
 
-b: If we're ever content with life, won't we stop driving ourselves to do great things?
+b: Если мы когда-нибудь будем довольны жизнью, не перестанем ли мы заставлять себя делать великие дела?
 
 `hong({ MOUTH_LOCK:true })`
 
 h: ...
 
-h: If we even fear... "running out of fears"...
+h: Если мы даже боимся... "избегать страхов"...
 
-h: I don't think we're gonna run out of fears.
+h: Я не думаю, что у нас закончатся страхи.
 
 `bb({ eyes:"smile_u", body:"normal", mouth:"smile" })`
 
-b: Oh, yeah! Whew! What a relief!
+b: Ох, да! Фух! Какое облегчение!
 
 (#act4_something_else)
 
@@ -1295,56 +1294,55 @@ b: Oh, yeah! Whew! What a relief!
 
 `bb({ body:"one_up", eyes:"sexy", mouth:"normal" })`
 
-b: "Doc, I'm anxious that I'm paying $100/hr just to hear you ask *how does that make you feel?*"
+b: "Док, я беспокоюсь, что я плачу $100/час только для того, чтобы услышать, как вы спрашиваете *как вы себя чувствуете?*"
 
 `bb({ body:"paw", eyes:"closed", mouth:"narrow" })`
 
-b: "Mm-hmm. And how does that make you feel?"
+b: "Мм-хмм. И как вы себя при этом чувствуете?"
 
 ```
 bb({ body:"normal", eyes:"normal", mouth:"normal" });
 hong({ eyes:"sad" });
 ```
 
-h: Nah, that's a totally reasonable worry.
+h: Не, это вполне обоснованное беспокойство.
 
 `hong({ eyes:"annoyed", mouth:"sad" });`
 
-h: And it genuinely sucks that mental healthcare isn't affordable for lots of folks.
+h: И это действительно отстой, что психомедицина не доступна для многих людей.
 
 `hong({ eyes:"normal", mouth:"normal" });`
 
-h: Still, there are some cheap or free options:
+h: Тем не менее, есть несколько дешёвых или бесплатных вариантов:
 
 `hong({ body:"chin" })`
 
-h: Support groups, online therapy, student/non-profit health centers...
+h: Группы поддержки, онлайн-терапия, студенческие/некоммерческие центры здоровья...
 
 `hong({ body:"hands_1" })`
 
-h: Building habits like meditation, sleeping well, chatting regularly with friends, learning new things...
+h: Формирование привычек, таких как медитация, хороший сон, регулярное общение с друзьями, изучение новых вещей...
 
 `hong({ body:"hands_2" })`
 
-h: Going to a library to borrow workbooks for evidence-based psychotherapies...
+h: Походы в библиотеку, чтобы взять книги доказательной психотерапии...
 
 `hong({ body:"one_up" })`
 
-h: There's a full list of resources at the end of this game!
+h: В конце игры есть полный список ресурсов об этом!
 
 ```
 hong({ body:"normal" });
 bb({ eyes:"annoyed", mouth:"narrow" });
 ```
 
-b: Well *that* fourth wall didn't last long.
+b: Что ж, *эта* четвёртая стена продержалась недолго.
 
 `hong({ body:"point" });`
 
-h: Some things are more important than narrative convention. Such as mental health.
+h: Некоторые вещи более важны, чем нарративные конвенции. Как, например, психическое здоровье.
 
 (#act4_something_else)
-
 
 # act4_bad_accept
 
@@ -1353,48 +1351,48 @@ bb({ eyes:"normal" });
 hong({ eyes:"normal_l", body:"one_up", mouth:"narrow" });
 ```
 
-h: I mean, that's what therapists say right? Accept all your emotions, even the negative ones?
+h: Я имею в виду, это то, что говорят терапевты, верно? Принять все свои эмоции, даже негативные?
 
 ```
 bb({ eyes:"annoyed" });
 hong({ eyes:"normal", body:"normal", mouth:"normal" });
 ```
 
-b: Wait.
+b: Подожди.
 
-["Accept" as in *give up*?](#act4_bad_accept_give_up)
+["Принять" как *сдасться*?](#act4_bad_accept_give_up)
 
-["Accept" as in *approve*?](#act4_bad_accept_approve)
+["Принять" как *позволить*?](#act4_bad_accept_approve)
 
-["Accept" as in *take literally*?](#act4_bad_accept_literally)
+["Принять" как *взять буквально*?](#act4_bad_accept_literally)
 
 # act4_bad_accept_give_up
 
 `bb({ eyes:"angry", body:"one_up" });`
 
-b: Do you think Martin Luther King would've said, "Shucks we can't sit in the front of the bus, let's just *accept* it?"
+b: Как думаешь, Мартин Лютер Кинг сказал бы: "чёрт, мы не можем сидеть в передней части автобуса, давайте просто *примем* это?"
 
 `bb({ eyes:"angry_r", body:"two_up" });`
 
-b: Why does the Self-Help Industrial Complex think waving the white flag is some *profound wisdom?*
+b: Почему Промышленный Комплекс Самопомощи думает, что размахивание белым флагом - это какая-то *глубокая мудрость?*
 
 `bb({ eyes:"annoyed", body:"normal" });`
 
-h: I think therapists mean "accept" bad things as in: acknowledging they exist and are hard to change,
+h: Я думаю, что терапевты имеют в виду "принять" плохие вещи, как есть: признавать их существование и трудность изменения,
 
-h: But not necessarily giving up a commitment to change.
+h: Но не обязательно отказываться от обязательства измениться.
 
 `bb({ eyes:"suspect" });`
 
-b: Then therapists should say *acknowledge*, not *accept*.
+b: Тогда терапевты должны говорить: *признать*, а не *принять*.
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: Yeah come to think of it, "accept" is kinda confusing.
+h: Да, если подумать, "принять" немного запутывает.
 
 `bb({ eyes:"closed", mouth:"narrow" });`
 
-b: Well, I *acknowledge* that.
+b: Что ж, я *признаю* это.
 
 (#act4_something_else)
 
@@ -1402,52 +1400,52 @@ b: Well, I *acknowledge* that.
 
 `bb({ eyes:"angry" });`
 
-b: Like it's *good* that we're broken or something? No!
+b: Как будто это *хорошо*, что мы сломаны или что-то вроде? Нет!
 
 `bb({ eyes:"angry_r", body:"one_up" });`
 
-b: All those dang Hollywood screenwriters who romanticize mental illness are full of crud!
+b: Все эти чертовы голливудские сценаристы, которые романтизируют психические заболевания, полны грязи!
 
 `bb({ eyes:"angry", body:"two_up" });`
 
-b: Having a mental disorder *sucks!* It robs people of *lives!* Why should we "accept" that?!
+b: Иметь психическое расстройства *отстой!* Они отнимают у людей *жизни!* Почему мы должны "принимать" это?!
 
 `bb({ body:"normal" });`
 
-h: I think therapists mean "accept" our emotions as in: be patient with them.
+h: Я думаю, что терапевты имеют в виду "принимать" наши эмоции, как есть: быть терпеливым с ними.
 
 ```
 hong({ body:"one_up" });
 bb({ eyes:"normal" });
 ```
 
-h: Like how struggling in quicksand makes you sink faster, and the solution is to patiently lie flat,
+h: Например, как борьба в зыбучих песках заставляет тебя тонуть быстрее и решение состоит в том, чтобы терпеливо лежать,
 
 `hong({ eyes:"surprise" });`
 
 {{if _.INJURED}}
-h: Fighting against you, my fear, lead me to jump off a roof.
+h: Борясь с тобой, моим страхом, заставляя меня спрыгнуть с крыши.
 {{/if}}
 
 {{if !_.INJURED}}
-h: Fighting against you, my fear, almost lead me to jump off a roof.
+h: Борясь с тобой, моим страхом, почти заставляя меня спрыгнуть с крыши.
 {{/if}}
 
 `hong({ body:"normal", eyes:"normal" });`
 
-h: Instead, the solution is to do what we're doing now – not to fight, but to patiently be with each other.
+h: Вместо этого решение состоит в том, чтобы делать то, что мы делаем сейчас – не бороться, но быть терпеливым друг с другом.
 
 `bb({ eyes:"annoyed" });`
 
-b: Then they should say *that* instead of some problematic word like "accept".
+b: Тогда они должны говорить *это* вместо какого-то проблемного слова как "принять".
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: Yeah come to think of it, "accept" kind of sucks.
+h: Да, если подумать, "принять" - отстой.
 
 `bb({ eyes:"closed_annoyed", mouth:"narrow" });`
 
-b: I do not accept "accept".
+b: Я не принимаю "принять".
 
 (#act4_something_else)
 
@@ -1455,35 +1453,32 @@ b: I do not accept "accept".
 
 `bb({ eyes:"sad", body:"one_up" });`
 
-b: But we already *know* you shouldn't take me literally!
+b: Но мы уже *знаем*, ты не должен понимать меня буквально!
 
 `bb({ eyes:"sad_u", body:"two_up" });`
 
-b: The whole *problem* is that I want to help you, but I suck at using words to do so!
+b: Вся *проблема* в том, что я хочу помочь тебе, но я не умею использовать слова для этого!
 
 `bb({ eyes:"sad", body:"normal" });`
 
-h: I think therapists mean "accept" your emotions as in: "don't fight or ignore them."
+h: Думаю, терапевты имеют в виду "принять" свои эмоции как: "не бороться или игнорировать их."
 
 `hong({ eyes:"surprise", body:"one_up" });`
 
-h: To listen to you, work *with* you, but not take what you say as 100% literal truth.
+h: Чтобы слушать тебя, работать *с* тобой, но не воспринимать буквально то, что ты говоришь, как 100% правду.
 
 ```
 hong({ eyes:"normal", body:"normal" });
 bb({ eyes:"annoyed", mouth:"normal" });`
 ```
 
-b: Then therapists should say *that* instead of some vague confusing word like "accept".
+b: Тогда терапевты должны говорить *это*, вместо какого-то неопределенного запутанного слова вроде "принять".
 
 `hong({ body:"chin", eyes:"annoyed" });`
 
-h: I guess they suck at using words, too.
+h: Наверное, они тоже не умеют пользоваться словами.
 
 (#act4_something_else)
-
-
-
 
 # act4_something_else
 
@@ -1493,11 +1488,11 @@ hong({ body:"normal", mouth:"normal", eyes:"normal" });
 ```
 
 {{if _.a4_fears_discussed==1}}
-h: Anyway, anything else you wanna chat about?
+h: Не важно, хочешь поговорить о чём-нибудь ещё?
 {{/if}}
 
 {{if _.a4_fears_discussed==2}}
-h: So, anything else on your heavy heart?
+h: Так, есть ещё какая-нибудь тяжесть на сердце?
 {{/if}}
 
 {{if _.a4_fears_discussed==3}}
@@ -1505,34 +1500,34 @@ h: So, anything else on your heavy heart?
 {{/if}}
 
 {{if _.a4_talked_about_harm!=true}}
-[I'm scared we'll be harmed.](#act4_harm)
+[Я боюсь что нам навредят.](#act4_harm)
 {{/if}}
 
 {{if _.a4_talked_about_alone!=true}}
-[I'm scared we'll be alone.](#act4_alone)
+[Я боюсь, что мы останемся одинокими.](#act4_alone)
 {{/if}}
 
 {{if _.a4_talked_about_bad!=true}}
-[I'm scared we're bad people.](#act4_bad)
+[Я боюсь, что мы плохие люди.](#act4_bad)
 {{/if}}
 
-[Nah, I'm good for now.](#act4c_prelude)
+[Не, я в порядке.](#act4c_prelude)
 
 # act4_something_else_2
 
-h: Okay, I think we've talked about all our fears now.
+h: Окей, думаю сейчас мы обсудили все страхи.
 
-b: Yes, there are only three fears.
+b: Да, здесь всего три страха.
 
-h: Yup, exactly three.
+h: Ага, ровно три.
 
-b: Convenient.
+b: Удобно.
 
 (#act4c)
 
 # act4c_prelude
 
-h: Good chat, team.
+h: Хорошо поболтали, команда.
 
 (#act4c)
 
@@ -1553,28 +1548,28 @@ h: ...
 
 `bb({eyes:"annoyed_d"})`
 
-b: This isn't some *game*, you know.
+b: Это не какая-то *игра*, ты знаешь.
 
 `bb({eyes:"angry_d", body:"one_up"})`
 
-b: Building a healthy relationship with your emotions isn't as simple as clicking buttons on a screen.
+b: Построение здоровых отношений с эмоциями не так-то просто, как нажатие кнопок на экране.
 
 `bb({eyes:"sad", body:"normal"})`
 
-b: *Can* we really get along?
+b: *Сможем* ли мы действительно поладить?
 
-b: *Can* we work together, as a team?
+b: *Сможем* ли мы работать вместе, как команда?
 
 `hong({eyes:"sad", body:"one_up"})`
 
-h: Well,
+h: Что ж,
 
 ```
 hong({eyes:"surprise_l"});
 bb({eyes:"normal"});
 ```
 
-a: E-excuse me...
+a: И-извините...
 
 ```
 Game.clearText();
@@ -1592,50 +1587,50 @@ music('campus', {volume:0.5, fade:1});
 
 `publish("act4", ["alshire", 0]);`
 
-a: W-wo-would you mind if I sat with you for lunch?
+a: В-вы не против, если я посижу с вами за ланчем?
 
 `publish("act4", ["alshire", 1]);`
 
 {{if _.TOP_FEAR=="harm"}}
-s: *This* is your crush? Why are they sitting alone like a psycho serial killer?
+s: *Это* твой возлюбленный? Почему он сидит в одиночестве, как психованный серийный убийца?
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: Asking your crush if you can sit with them? Do you know how *needy* we sound?!
+s: Спрашивать своего возлюбленного можем ли мы составить ему компанию? Ты знаешь, какими *нуждающимся* мы звучим?!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: *This* is your crush? We interrupted their peace and quiet! We're such a burden!
+s:*Это* твой возлюбленный? Мы нарушили его покой и тишину! Мы такая обуза!
 {{/if}}
 
 `publish("act4", ["alshire", 2]);`
 
-a: I- I mean- it's, it's okay if not, I just...
+a: Я- Я имею в виду- это, это нормально если нет, Я просто...
 
 `publish("act4", ["alshire", 3]);`
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h2"`
 
-[Wait, didn't I see you at the party?](#act4d_recognition) `publish("act4", ["hong_to_alshire",1])`
+[Погоди, не тебя ли я видел на вечеринке?](#act4d_recognition) `publish("act4", ["hong_to_alshire",1])`
 
-[Yeah, of course! Come here.](#act4d_yes) `publish("act4", ["hong_to_alshire",2])`
+[Да, конечно! Иди сюда.](#act4d_yes) `publish("act4", ["hong_to_alshire",2])`
 
-[Sorry, I need alone time right now.](#act4d_no) `publish("act4", ["hong_to_alshire",8])`
+[Прости, сейчас мне нужно побыть одному.](#act4d_no) `publish("act4", ["hong_to_alshire",8])`
 
 # act4d_recognition
 
 `publish("act4", ["hong_to_alshire",2]);`
 
-h2: Yeah you were on the couch! At the first party I went to...
+h2: Да, ты была на диване! На первой же вечеринке, куда я ходил...
 
 `publish("act4", ["hong_to_alshire",10]);`
 
 {{if _.a2_ending=="fight"}}
-h2: Where I had that panic attack and punched the host.
+h2: Где я запаниковал и ударил хозяина вечеринки.
 {{/if}}
 
 {{if _.a2_ending=="flight"}}
-h2: Where I had that panic attack and ran out crying.
+h2: Где я запаниковал и убежал в слезах.
 {{/if}}
 
 ```
@@ -1643,18 +1638,18 @@ publish("act4", ["hong_to_alshire", 0]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, we may be making them uncomfortable.
+b: Погоди, человек, мы можем поставить её в неловкое положение.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, I don't mean to put you on the spot!
+h2: Ах, я не хочу ставить тебя в неловкое положение!
 
 `publish("act4", ["hong_to_alshire",4]);`
 
-h2: Just remembering a friendly face, is all.
+h2: Просто вспомнил дружеское лицо, вот и всё.
 
 ```
 publish("act4", ["hong_to_alshire",5]);
@@ -1662,15 +1657,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: AHHHHH I KNEW IT! THEY'RE A DANGEROUS PANIC-DRIVEN PSYCHO!
+s: АААААА Я ТАК И ЗНАЛ! ОН ОПАСНЫЙ ПАНИЧЕСКИЙ ПСИХОПАТ!
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: AAHHH THE FIRST IMPRESSION WE MADE WAS "WITNESSED MY TRAUMA"! THAT MEANS THEY HATE US!
+s: ААААА ПЕРВОЕ ВПЕЧАТЛЕНИЕ КОТОРОЕ МЫ СДЕЛАЛИ БЫЛО "СВИДЕТЕЛЬСТВО МОЕЙ ТРАВМЫ"! ЗНАЧИТ ОН НАС НЕНАВИДИТ!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AAAHHH WE MADE SOMEONE REMEMBER A TRAUMATIC EVENT. OUR MERE PRESENCE HURTS OTHERS.
+s: АААААА МЫ ЗАСТАВИЛИ КОГО-ТО ВСПОМНИТЬ ТРАВМИРУЮЩЕЕ СОБЫТИЕ. ОДНО НАШЕ ПРИСУТСТВИЕ ПРИЧИНЯЕТ БОЛЬ ДРУГИМ.
 {{/if}}
 
 (#act4e)
@@ -1682,18 +1677,18 @@ publish("act4", ["hong_to_alshire", 5]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, they seem uncomfortable.
+b: Погоди, человек, она кажется сбитой с толку.
 
 ```
 publish("act4", ["hong_to_alshire", 6]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, no pressure of course!
+h2: Ах, никакого давления, конечно!
 
 `publish("act4", ["hong_to_alshire", 4]);`
 
-h2: Just saying, you can sit here if you want to.
+h2: Просто говорю, что ты можешь сесть здесь, если захочешь.
 
 ```
 publish("act4", ["hong_to_alshire", 5]);
@@ -1701,15 +1696,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: THEY'RE BEING *TOO* FRIENDLY! LIKE TED BUNDY, THE SERIAL KILLER!
+s: МЫ *СЛИШКОМ* ДРУЖЕЛЮБНЫ! КАК СЕРИЙНЫЙ УБИЙЦА ТЕД БАНДИ!
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: THEY'RE JUST ACTING NICE! NO ONE *REALLY* WANTS TO BE CLOSE TO US!
+s: ОН ПРОСТО ВЕЖЛИВ! НИКТО В *ДЕЙСТВИТЕЛЬНОСТИ* НЕ ХОЧЕТ БЫТЬ С НАМИ!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: AHHH WE ALWAYS MAKE OTHERS FEEL AWKWARD! WE'RE A STAIN UPON THE EARTH!
+s: АААА МЫ ВСЕГДА ЗАСТАВЛЯЕМ ДРУГИХ ЧУВСТВОВАТЬ СЕБЯ НЕЛОВКО!
 {{/if}}
 
 (#act4e)
@@ -1721,18 +1716,18 @@ publish("act4", ["hong_to_alshire", 9]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 3 : 1]);
 ```
 
-b: Hang on human, we may be making them uncomfortable.
+b: Погоди, человек, мы можем поставить их в неловкое положение.
 
 ```
 publish("act4", ["hong_to_alshire", 3]);
 publish("act4", ["bb_to_alshire", _.INJURED ? 2 : 0]);
 ```
 
-h2: Ah, I don't mean to be rude!
+h2: Ах, я не хотел быть грубым!
 
 `publish("act4", ["hong_to_alshire", 6]);`
 
-h2: I just need some time to process my emotions. Please don't take it as a personal rejection.
+h2: Мне просто нужно время, чтобы переварить свои эмоции. Пожалуйста, не воспринимай это как личный отказ.
 
 ```
 publish("act4", ["hong_to_alshire", 7]);
@@ -1740,15 +1735,15 @@ publish("act4", ["alshire", 4]);
 ```
 
 {{if _.TOP_FEAR=="harm"}}
-s: WHAT SICK, TWISTED THOUGHTS ARE THEY PROCESSING?! WHAT DARK DESIRES FILL THIS PSYCHO'S HEART?!
+s: КАКИЕ БОЛЬНЫЕ, ИЗВРАЩЕННЫЕ МЫСЛИ ОНИ ОБДУМЫВАЮТ?! КАКИЕ ТЁМНЫЕ ЖЕЛАНИЯ НАПОЛНЯЮТ СЕРДЦА ЭТИХ ПСИХОВ?!
 {{/if}}
 
 {{if _.TOP_FEAR=="alone"}}
-s: WE'VE BEEN PERSONALLY REJECTED! WE'LL NEVER BE LOVED!
+s: НАС ОТВЕРГЛИ! МЫ НИКОГДА НЕ БУДЕМ ЛЮБИМЫ!
 {{/if}}
 
 {{if _.TOP_FEAR=="bad"}}
-s: WE INTERRUPTED THEIR EMOTIONAL PROCESSING! NOW THEY'LL BE TRAUMATIZED FOREVER AND IT'S ALL OUR FAULT!
+s: МЫ ПРЕРВАЛИ ИХ ЭМОЦИОНАЛЬНУЮ ОБРАБОТКУ! ТЕПЕРЬ ОНИ БУДУТ ТРАВМИРОВАНЫ НАВСЕГДА, И ЭТО ВСЁ НАША ВИНА!
 {{/if}}
 
 (#act4e)
@@ -1760,7 +1755,7 @@ Game.WORDS_HEIGHT_BOTTOM = 195;
 publish("act4", ["alshire", 6]);
 ```
 
-s: RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN
+s: БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ БЕГИ
 
 ```
 Game.clearText();
@@ -1787,18 +1782,18 @@ Game.WORDS_HEIGHT_BOTTOM = -1; /* reset */
 
 `publish("act4-jumpcut-hong");`
 
-h: Huh. That was weird. I wonder what was going on in their head.
+h: Ух. Это было странно. Интересно, что творилось у неё в голове.
 
 `publish("act4", ["hong_closer", 2]);`
 
-h: Anyway, you were saying?
+h: Не важно, о чём мы говорили?
 
 ```
 publish("act4", ["hong_closer", 1]);
 publish("act4", ["bb_closer", 6]);
 ```
 
-b: Uh, I forget? Something about teams and work?
+b: Ух, я забыл? Что-то о командах и работе?
 
 ```
 publish("act4", ["bb_closer", 0]);
@@ -1812,55 +1807,55 @@ publish("act4", ["hong_closer", 1]);
 publish("act4", ["bb_closer", 4]);
 ```
 
-b: They say you should "make peace" with your emotions, as if your emotions are *war criminals*.
+b: Они говорят, что ты должен "примириться" со своими эмоциями, как будто твои эмоции это *военные преступники*.
 
 `publish("act4", ["bb_closer", 7]);`
 
-b: But I want us to make *more* than mere peace! I want us to be *allies!*
+b: Но я хочу, чтобы мы заключили нечто *большее*, чем просто мир! Я хочу, чтобы мы были *союзниками!*
 
 `publish("act4", ["bb_closer", 3]);`
 
-b: I want to be a good guard-dog. Just like how hunger & thirst are alarms for your physical needs,
+b: Я хочу быть хорошим сторожевым псом. Так же, как голод и жажда являются сигналами тревоги для твоих физических потребностей,
 
 `publish("act4", ["bb_closer", 8]);`
 
-b: I want to be the alarm for your *psychological* needs – your needs for safety, belonging, goodness.
+b: Я хочу быть сигналом тревоги для твоих *психологических* потребностей – твоих потребностей в безопасности, принадлежности, доброте.
 
 `publish("act4", ["bb_closer", 1]);`
 
-b: But... I suck at my job, so I need you to train me.
+b: Но... Я плохо справляюсь со своей работой, поэтому мне нужно, чтобы ты меня обучил.
 
 `publish("act4", ["bb_closer", 4]);`
 
-b: I'm not "always valid," nor "always irrational." I'm just... trying my best. So, please,
+b: Я не "всегда верен" и не "всегда иррационален". Я просто... стараюсь изо всех сил. Так что, пожалуйста,
 
 `publish("act4", ["bb_closer", 30]);`
 
-b: Help me help you!
+b: Помоги мне помочь тебе!
 
 `publish("act4", ["bb_closer", 6]);`
 
-b: Though, teaching an old dog new tricks *will* take a while. Maybe *years.*
+b: Хотя, обучение старой собаки новым трюкам *займёт* некоторое время. Может быть, *годы.*
 
 `publish("act4", ["bb_closer", 3]);`
 
-b: And sometimes I'll relapse, I'll slip into my old habits.
+b: И иногда у меня случаются рецидивы, я возвращаюсь к своим старым привычкам.
 
 `publish("act4", ["bb_closer", 2]);`
 
-b: I'll bark at shadows. I'll scare you with words. I might even show you some intrusive images of... things.
+b: Я буду лаять на тени. Я буду пугать тебя словами. Я мог бы даже показывать тебе некоторые навязчивые образы... вещей.
 
 `publish("act4", ["bb_closer", 9]);`
 
-b: I'm sorry! I'm a battered shelter dog! Battered dogs poop on your bed sometimes!
+b: Прости меня! Я побитая приёмная собака! Избитые собаки иногда какают на твою кровать!
 
 `publish("act4", ["bb_closer", 4]);`
 
-b: But if you're patient with me... and just stay and sit with me...
+b: Но если ты будешь терпелив со мной... и просто останешься и посидишь со мной...
 
 `publish("act4", ["bb_closer", 8]);`
 
-b: Maybe you can tame this wolf.
+b: Быть может, ты сможешь приручить этого волка.
 
 `publish("act4", ["bb_closer", 0]);`
 
@@ -1870,11 +1865,11 @@ b: Maybe you can tame this wolf.
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "h"`
 
-[Good dog.](#act4f-pat-bb) `Game.OVERRIDE_CHOICE_SPEAKER = "h"; publish("act4", ["hong_closer", 2]);`
+[Хорошая собака.](#act4f-pat-bb) `Game.OVERRIDE_CHOICE_SPEAKER = "h"; publish("act4", ["hong_closer", 2]);`
 
 `Game.OVERRIDE_CHOICE_SPEAKER = "b"`
 
-[Good human.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
+[Хороший человек.](#act4f-pat-hong) `Game.OVERRIDE_CHOICE_SPEAKER = "b"; publish("act4", ["bb_closer", 8]);`
 
 # act4f-pat-hong
 
@@ -1971,15 +1966,15 @@ publish("act4", ["hong_closer", 5]);
 ```
 
 {{if _.fifteencigs}}
-b: AAAAA YOU'RE STILL EATING ALONE FIFTEEN CIGARETTES AAAAA
+b: ААААА МЫ ВСЁ ЕЩЁ ЕДИМ В ОДИНОЧЕСТВЕ ПЯТНАДЦАТЬ СИГАРЕТ ААААА
 {{/if}}
 
 {{if _.parasite}}
-b: AAAAA YOU'RE STILL NOT PRODUCTIVE WHILE EATING WE'RE SOCIETY-PARASITES AAAAA
+b: ААААА ТЫ ВСЁ ЕЩЁ НЕПРОДУКТИВЕН ПОКА ЕШЬ МЫ СОЦИАЛЬНЫЕ ПАРАЗИТЫ ААААА
 {{/if}}
 
 {{if _.whitebread}}
-b: AAAAA YOU'RE EATING MORE WHITE BREAD AAAAA
+b: ААААА МЫ ЕДИМ БОЛЬШЕ БЕЛОГО ХЛЕБА ААААА
 {{/if}}
 
 ```
@@ -1992,6 +1987,6 @@ Game.FORCE_TEXT_DURATION = 90;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: YAP YAP YAP YAP YAP
+b: ТЯФ ТЯФ ТЯФ ТЯФ ТЯФ
 
 (#credits)
