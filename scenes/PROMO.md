@@ -6,7 +6,7 @@
 
 (...51)
 
-[PLAY!](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
+[ИГРАТЬ!](#intro-start) `publish("intro-to-game-1"); Game.OVERRIDE_CHOICE_LINE=true;`
 
 # intro-start
 
@@ -14,13 +14,13 @@
 
 `clearText()`
 
-n3: So before we start, how would *you* like to read?
+n3: Прежде чем мы начнём, как бы *тебе* хотелось читать?
 
 `publish("show_options_bottom")`
 
 # intro-start-2
 
-n3: Now, let's begin our story...
+n3: А сейчас, начнём нашу историю..
 
 ```
 publish("hide_tabs");
@@ -31,7 +31,7 @@ clearText();
 
 `publish("intro-to-game-2")`
 
-n2: THIS IS A HUMAN
+n2: ЭТО ЧЕЛОВЕК
 
 (...600)
 
@@ -51,9 +51,9 @@ music('battle', {volume:0.5});
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: А ЭТО ТРЕВОГА ЧЕЛОВЕКА
 
-n: _YOU_ ARE THE ANXIETY
+n: _ТЫ_ ЭТА ТРЕВОГА
 
 (#act1_normal)
 
@@ -66,45 +66,45 @@ sfx("rustle");
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Nope. No, nope, not listening. Gonna check my phone.
+h: Не. Нет, не-а, не слушаю. Проверю свой телефон.
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: ТВОЯ РАБОТА ЗАЩИЩАТЬ ТВОЕГО ЧЕЛОВЕКА ОТ *ОПАСНОСТИ*
 
 `bb({eyes:"look", mouth:"small_lock", body:"fear"})`
 
-b: Gasp! You're scrolling your life away on Twitter! Again!
+b: Ты проскроливаешь свою жизнь в Twitter! Опять!
 
 ```
 bb({eyes:"normal", mouth:"normal", body:"normal"});
 hong({eyes:"annoyed"});
 ```
 
-h: Yeah I wonder why I don't just sit and listen to my thoughts more often.
+h: Да, я удивляюсь, почему я не просто сижу и слушаю свои мысли почаще.
 
 `hong({eyes:"neutral"});`
 
-n: QUICK, WARN THEM ABOUT A *DANGER!*
+n: БЫСТРЕЕ, ПРЕДУПРЕДИ ЕГО ОБ *ОПАСНОСТИ!*
 
 ```
 bb({eyes:"look"});
 ```
 
-[Oh no, look at that horrible news story!](#act1d_news)
+[О нет, взгляни на эту ужасную историю в новостях!](#act1d_news)
 
-[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+[О нет, эти твиты в действительности о *нас?*](#act1d_subtweet)
 
-[Hey, a GIF of a cat drinking milk](#act1d_milk)
+[Эй, GIF-ка о котике лакающий молочко](#act1d_milk)
 
 # act1d_milk
 
 `hong({mouth:"smile", eyes:"surprise"});`
 
-h: Heh ya that's cute, I--
+h:  Хех, да, это довольно мило, Я--
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -112,7 +112,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+b: КОШКИ НЕ ПЕРЕВАРИВАЮТ МОЛОКО, И МЫ УЖАСНЫЕ ЛЮДИ НАСЛАЖДАЮЩИЕСЯ НАСИЛИЕМ НАД ЖИВОТНЫМИ
 
 (...200)
 
