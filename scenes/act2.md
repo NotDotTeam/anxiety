@@ -16,7 +16,6 @@
 
 (#act2-preamble-tinder)
 
-
 # act2-preamble-news1
 
 ```
@@ -71,7 +70,6 @@ a: И не говори!
 
 (#act2-preamble-end)
 
-
 # act2-preamble-news2
 
 ```
@@ -119,7 +117,6 @@ publish("act2",["dum",3]);
 a: И не говори!
 
 (#act2-preamble-end)
-
 
 # act2-preamble-cat
 
@@ -174,7 +171,6 @@ publish("act2",["dum",3]);
 a: И не говори!
 
 (#act2-preamble-end)
-
 
 # act2-preamble-tinder
 
@@ -241,7 +237,6 @@ a: И не говори!
 
 (#act2-preamble-end)
 
-
 # act2-preamble-hookuphole
 
 ```
@@ -263,7 +258,6 @@ a: И не говори!
 
 (#act2-preamble-end)
 
-
 # act2-preamble-pokemon
 
 ```
@@ -282,7 +276,6 @@ publish("act2",["dum",3]);
 a: Поймай их всех!™
 
 (#act2-preamble-end)
-
 
 # act2-preamble-end
 
@@ -1409,7 +1402,6 @@ b: Это плохо, человек. Это очень, очень плохо.
 [Я *знал*, что с ним что-то не так!](#act2h_opt3) `Game.OVERRIDE_CHOICE_LINE=true`
 
 [Вообще-то, он мог отравить это!](#act2h_opt2) `Game.OVERRIDE_CHOICE_LINE=true`
-
 
 # act2h_opt1
 

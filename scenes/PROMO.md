@@ -57,7 +57,6 @@ n: _ТЫ_ ЭТА ТРЕВОГА
 
 (#act1_normal)
 
-
 # act1_normal
 
 ```
