@@ -16,6 +16,7 @@
 
 (#act2-preamble-tinder)
 
+
 # act2-preamble-news1
 
 ```
@@ -70,6 +71,7 @@ a: И не говори!
 
 (#act2-preamble-end)
 
+
 # act2-preamble-news2
 
 ```
@@ -117,6 +119,7 @@ publish("act2",["dum",3]);
 a: И не говори!
 
 (#act2-preamble-end)
+
 
 # act2-preamble-cat
 
@@ -171,6 +174,7 @@ publish("act2",["dum",3]);
 a: И не говори!
 
 (#act2-preamble-end)
+
 
 # act2-preamble-tinder
 
@@ -237,6 +241,7 @@ a: И не говори!
 
 (#act2-preamble-end)
 
+
 # act2-preamble-hookuphole
 
 ```
@@ -258,6 +263,7 @@ a: И не говори!
 
 (#act2-preamble-end)
 
+
 # act2-preamble-pokemon
 
 ```
@@ -276,6 +282,7 @@ publish("act2",["dum",3]);
 a: Поймай их всех!™
 
 (#act2-preamble-end)
+
 
 # act2-preamble-end
 
@@ -447,7 +454,7 @@ b: Нам нужно убираться отсюда и навсегда изо�
 ```
 _.a2_second_danger = 'netflix';
 _.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "карантине";
+_.a2_hoodie_callback = "a quarantine";
 ```
 
 (#act2c)
@@ -492,7 +499,7 @@ b: "БОЛЬШОЙ И ОТВРАТИТЕЛЬНЫЙ ЧЁРТОВ ИЗВРАЩЕН
 ```
 _.a2_second_danger = 'law';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "законе";
+_.a2_hoodie_callback = "the law";
 ```
 
 (#act2c)
@@ -524,7 +531,7 @@ b: ЭТО ЭФФЕКТ БАБОЧКИ, ЧЕЛОВЕК! СКОЛЬКО ЛЮДЕЙ
 ```
 _.a2_second_danger = 'butterfly';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "Первой Мировой Войне";
+_.a2_hoodie_callback = "World War I";
 ```
 
 (#act2c)
@@ -552,7 +559,7 @@ b: Человек, нам нужно бежать от этих зомби, пр
 ```
 _.a2_second_danger = 'zombies';
 _.a2_attack_2 = "alone";
-_.a2_hoodie_callback = "зомби";
+_.a2_hoodie_callback = "zombies";
 ```
 
 (#act2c)
@@ -580,7 +587,7 @@ b: РАЗВЛЕКАЯСЬ, МЫ ПОМОГАЕМ *ГИТЛЕРУ*.
 ```
 _.a2_second_danger = 'hitler';
 _.a2_attack_2 = "bad";
-_.a2_hoodie_callback = "Гитлере";
+_.a2_hoodie_callback = "Hitler";
 ```
 
 (#act2c)
@@ -604,7 +611,7 @@ b: УМРЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁШЬ
 ```
 _.a2_second_danger = 'ignore';
 _.a2_attack_2 = "harm";
-_.a2_hoodie_callback = "угарном газе";
+_.a2_hoodie_callback = "carbon monoxide";
 ```
 
 (#act2c)
@@ -686,7 +693,7 @@ b: Тогда им придется стерилизовать беспилот�
 
 `_.a2_attack_3 = "alone";`
 
-`_.a2_hoodie_callback = "карантине";`
+`_.a2_hoodie_callback = "a quarantine";`
 
 (#act2d)
 
@@ -725,7 +732,7 @@ b: потому что они БОЛЬШИЕ И ОТВРАТИТЕЛЬНЫЕ Ч�
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "законе";`
+`_.a2_hoodie_callback = "the law";`
 
 (#act2d)
 
@@ -749,7 +756,7 @@ b: БУМ, ТЫ ОБАНКРОТИШЬ НАШУ СИСТЕМУ ЗДРАВООХ�
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "эффекте бабочки";`
+`_.a2_hoodie_callback = "the butterfly effect";`
 
 (#act2d)
 
@@ -769,7 +776,7 @@ b: Тогда они УКУСЯТ ТЕБЯ и превратят в БЕЗМОЗ
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "зомби";`
+`_.a2_hoodie_callback = "zombies";`
 
 (#act2d)
 
@@ -789,7 +796,7 @@ b: *Теперь наши планы могут идти лесом, рейх п
 
 `_.a2_attack_3 = "bad";`
 
-`_.a2_hoodie_callback = "Гитлере";`
+`_.a2_hoodie_callback = "Hitler";`
 
 (#act2d)
 
@@ -809,7 +816,7 @@ b: МЫ НЕ ДАЖЕ ЗАМЕТИЛИ ПРИБЛИЖЕНИЕ СМЕРТИ. МЫ
 
 `_.a2_attack_3 = "harm";`
 
-`_.a2_hoodie_callback = "угарном газе";`
+`_.a2_hoodie_callback = "carbon monoxide";`
 
 (#act2d)
 
@@ -867,9 +874,9 @@ b: Человек, у тебя болит голова? Твои конечно�
 
 b: АААА МЫ УМИРАЕМ! МЫ УМИРАЕМ МЫ УМИРАЕМ МЫ УМИРА--
 
-`_.a2_attack_3 = "вреде";`
+`_.a2_attack_3 = "harm";`
 
-`_.a2_hoodie_callback = "чашах пунша";`
+`_.a2_hoodie_callback = "punch bowls";`
 
 (#act2d)
 
@@ -1505,7 +1512,7 @@ bb({ body:"normal", mouth:"normal", eyes:"sad" });
 attack("100p", _.SPECIAL_ATTACK);
 Game.FORCE_CANT_SKIP = false;
 setTimeout(function(){
-	publish("remove_special_attack");
+    publish("remove_special_attack");
 },30);
 ```
 

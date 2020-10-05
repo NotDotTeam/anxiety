@@ -208,7 +208,7 @@ h2: Нет. Неправда.
 publish("act3",["roofhunter",13]);
 publish("act3",["roofhong",15]);
 music('battle_dark', {volume:1.0}, function(){
-	music('battle_dark_loop');
+    music('battle_dark_loop');
 });
 ```
 
@@ -224,6 +224,8 @@ publish("act3",["dd",6]);
 r: Да, ^бля^! Я в тебя верю, малыш! Прикончи его! <3
 
 (#act3a)
+
+
 
 # act3a
 
@@ -326,6 +328,7 @@ bb({ eyes:"sad" });
 `Game.OVERRIDE_CHOICE_SPEAKER = "fear_bad"`
 
 [](#act3_fork) `_.SPECIAL_ATTACK="bad"; Game.OVERRIDE_CHOICE_LINE=true`
+
 
 # act3_fork
 
@@ -492,6 +495,8 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 (#act3_bad_2)
 
+
+
 # act3_good_1_fail_harm
 
 b: Пожалуйста, просто поставь бутылку и давай--
@@ -511,6 +516,9 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
 (#act3_bad_2)
+
+
+
 
 # act3_bad_2
 
@@ -554,6 +562,8 @@ b: НЕТ ПОДОЖДИ ЭТО ОБРАТНАЯ ПСИХОЛОГИЯ ТЕБЕ �
 
 (#act3_bad_3)
 
+
+
 # act3_bad_2_right
 
 `bb({ eyes:"angry" });`
@@ -568,6 +578,7 @@ h: Потому что ты никогда не верил в *меня*.
 
 (#act3_bad_3)
 
+
 # act3_bad_2_terrible
 
 `bb({ eyes:"angry" });`
@@ -581,6 +592,8 @@ b: Вместо того, чтобы их ненавидеть за попытк
 h: Неправильный ответ.
 
 (#act3_bad_3)
+
+
 
 # act3_bad_3
 
@@ -629,6 +642,8 @@ h: Я вообще больше ничего не чувствую.
 
 (#act3_end)
 
+
+
 # act3_good_2a
 
 `bb({mouth:"sorry", eyes:"sorry_down"});`
@@ -654,6 +669,8 @@ h: Мы могли бы избежать стольких проблем, ты, 
 
 (#act3_good_2q)
 
+
+
 # act3_good_2b
 
 `hong({ body:"normal", mouth:"angry", eyes:"look_right" });`
@@ -667,6 +684,7 @@ h: ...
 h: Извиняешься *за что?*
 
 (#act3_good_2q)
+
 
 # act3_good_2q
 
@@ -721,6 +739,8 @@ b: Извини.
 
 (#act3_good_4)
 
+
+
 # act3_good_3_respect
 
 `bb({eyes:"sorry_down"});`
@@ -737,6 +757,8 @@ b: Извини.
 
 (#act3_good_4)
 
+
+
 # act3_good_3_hurt
 
 `bb({eyes:"sorry_down"});`
@@ -752,6 +774,7 @@ b: Я плохой пёс.
 b: Извини.
 
 (#act3_good_4)
+
 
 # act3_good_4
 
@@ -789,6 +812,14 @@ n: *НИЧЬЯ*
 
 (#act3_end)
 
+
+
+
+
+
+
+
+
 # act3_end
 
 ```
@@ -805,6 +836,10 @@ Game.FORCE_CANT_SKIP = true;
 {{if _.a3_ending=="jump"}}
 (#act3_jump)
 {{/if}}
+
+
+
+
 
 
 # act3_walkaway
@@ -946,6 +981,9 @@ Game.WORDS_HEIGHT_BOTTOM = -1;
 (...2000)
 
 (#act4)
+
+
+
 
 # act3_jump
 
